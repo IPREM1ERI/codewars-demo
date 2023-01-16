@@ -8,4 +8,14 @@
 
 function rentalCarCost(d) {
   // Your solution here
+  let discount = 0;
+  if (d >= 3 && d < 7) discount = -20;
+  if (d >=7) discount = -50
+  let total = 40 * d + discount
+  return total
 }
+
+console.log(rentalCarCost(1)) // 40
+console.log(rentalCarCost(3)) // 100
+console.log(rentalCarCost(7)) // 230
+
